@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaints</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1>KOECH UBER BUSINESS</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="complains.html">Complaints</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                </ul>                
+            </nav>
+        </header>
+        <section id="complaints" class="section">
+            <h2>Submit Your Complaint</h2>
+            <p>We value your feedback and are committed to addressing any issues you may have experienced with our service. Please fill out the form below to submit your complaint.</p>
+            <form @submit.prevent="submitForm">
+                <input type="text" v-model="form.name" placeholder="Your Name" required>
+                <input type="email" v-model="form.email" placeholder="Your Email" required>
+                <textarea v-model="form.message" placeholder="Your Complaint" required></textarea>
+                <button type="submit">Submit Complaint</button>
+            </form>
+        </section>
+    
+    </div>
+
+    <script src="vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

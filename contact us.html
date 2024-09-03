@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Koech Uber Business</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1>KOECH UBER BUSINESS</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="complains.html">Complains</a></li>
+                    <li><a href="book ride.html">Book a Ride</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="contact-us" class="section">
+            <h2>Contact Us</h2>
+            <p>We're here to help! Reach out to us through any of the following methods:</p>
+            <form @submit.prevent="sendMessage">
+                <input type="text" v-model="contactForm.name" placeholder="Your Name" required>
+                <input type="email" v-model="contactForm.email" placeholder="Your Email" required>
+                <textarea v-model="contactForm.message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Our Contact Information</h3>
+                <div class="contact-item">
+                    <section id="contact" class="section">
+                     <h2>Contact Us</h2>
+                     <p>We're here to help! Reach out to us through any of the following methods:</p>
+                        <div class="contact-info">
+                    <div class="contact-item">
+                         <img src="assets/Premium Photo _ Call icon on a Green Circle Isolated trendy 3D Realistic Phone Call Button 3d rendering.jpeg" alt="Phone Icon" class="contact-icon">
+                               <p>+254-127-86436</p>
+                         </div>
+                         <div class="contact-item">
+                           <img src="assets/How to Make Your Life Better by Sending Five Simple Emails.jpeg" alt="Email Icon" class="contact-icon">
+                               <p>contact@koechuberbusiness.com</p>
+                            </div>
+                         <div class="contact-item">
+                                <img src="assets/3d Location Icon Clipart In Transparent Background Vector, Background Clipart, Location Clipart, Icon Clipart PNG Transparent Image and Clipart for Free Download.jpeg" alt="Address Icon" class="contact-icon">
+                                <p>123 Main Street, Nairobi, Kenya</p>
+                            </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                contactForm: {
+                    name: '',
+                    email: '',
+                    message: ''
+                }
+            },
+            methods: {
+                sendMessage() {
+                    alert(`Message sent! Name: ${this.contactForm.name}, Email: ${this.contactForm.email}`);
+                    // Clear the form
+                    this.contactForm.name = '';
+                    this.contactForm.email = '';
+                    this.contactForm.message = '';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

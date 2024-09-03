@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.nav-links li a {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem; 
+    margin: 0;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25rem; 
+}
+
+
+
+header {
+    background-color: #663d1c;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.section-image {
+    width: 50%;
+    height: 100%;
+    max-width: 100%;
+    margin-top: 1rem;
+}
+
+.aspect-ratio-box {
+    position: fixed;
+    width: 50%;
+    padding-top: 16.25%; 
+    overflow: hidden;
+}
+
+.uber-driver {
+    width: 50%; 
+    height: 200px; 
+    object-fit: scale scale-down; 
+}
+
+section#home {
+    background-image: url('assets/Victim in Uber India rape case may take action, her attorney says.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    color: rgb(226, 0, 0); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+#home h2 {
+    font-size: 3.5rem; 
+    color: rgb(67, 219, 20); 
+
+}
+
+#home p {
+    font-size: 3.25rem; 
+    color: rgb(69, 255, 13); 
+}
+
+#home button {
+    font-size: 1.5rem; 
+    color: rgb(8, 8, 8); 
+    background-color: rgb(212, 144, 17); 
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-family:  sans-serif;
+}
+
+#home button:hover {
+    background-color: #3498db; 
+}
+
+
+button {
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(0, 123, 255, 0.7); 
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: rgba(0, 86, 179, 0.7); 
+}
+
+#contact {
+    background-color: #f8f9fa;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+#contact p {
+    font-size: 1.25rem;
+    color: #34495e;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.contact-icon {
+    width: 40px; 
+    height: 40px;
+    margin-right: 1rem;
+}
+
+.contact-item p {
+    font-size: 1.25rem;
+    color: #34495e;
+    margin: 0;
+}
+
+input, textarea {
+    width: 15%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.payment-options {
+    margin-top: 1rem;
+}
+
+.payment-options button {
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem;
+    background-color: transparent; 
+    color:none;
+    border: none; 
+    cursor: pointer;
+}
+
+.payment-options button:hover {
+    background-color:none;
+    color: black; 
+}
+
+#payment {
+    background-color:none;
+}
+
+#payment form {
+    margin-top: 1rem;
+}
+
+#payment input {
+    width: 25%;
+    padding: 0.75rem;
+    margin-bottom: none;
+    border: transparent;
+    border-radius: transparent;
+}
+
+#payment button {
+    padding: 0.75rem 1.5rem;
+    background-color: none;
+    color: none;
+    border: none;
+    cursor: pointer;
+}
+
+#payment button:hover {
+    background-color: none;
+}
+
+.payment-icon {
+    width: 500px; 
+    height: 100%; 
+    margin-left: 0.11rem;
+    vertical-align: middle;
+    border: none; 
+}
+
+#mpesa-payment {
+    background-color: #f8f9fa;
+    padding: 2rem 1rem;
+    text-align: center;
+    max-width: 400px; 
+    margin: 0 auto; 
+    border-radius: 8px; 
+}
+
+#mpesa-payment h2 {
+    font-size: 2rem; /* Adjust the font size */
+    color: black;
+    margin-bottom: 1rem;
+}
+
+#mpesa-payment p {
+    font-size: 1.25rem; 
+    color: black;
+    margin-bottom: 1.5rem;
+}
+
+#mpesa-payment form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mpesa-payment input {
+    width: 100%; 
+    max-width: 300px; 
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 1rem;
+}
+
+#mpesa-payment button {
+    padding: 0.75rem 1.5rem;
+    background-color: #27ae60; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.25rem; 
+}
+
+#mpesa-payment button:hover {
+    background-color: #2ecc71; 
+}
+
+#mpesa-payment {
+    background-image: url('assets/mpesa\ image.jpeg'); 
+    background-position: center; 
+    padding: 2rem 1rem;
+    text-align: center;
+    max-width: 400px; 
+    margin: 0 auto;
+    border-radius: 8px; 
+    color: white; 
+}
+
+#more-about {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#more-about h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+#more-about p {
+    font-size: 1.25rem;
+    color: #34495e;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
